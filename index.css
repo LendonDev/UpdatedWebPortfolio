@@ -1,0 +1,264 @@
+:root {
+  font-family: "IBM Plex Mono", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: -1px;
+  font-weight: 500;
+
+  color: rgba(255, 255, 255, 0.87);
+  background-color: rgb(16, 16, 16);
+
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-size: 12px;
+  letter-spacing: 0px;
+  line-height: 18px;
+}
+
+i {
+  font-size: 12px;
+  letter-spacing: 0px;
+  color: #797979;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+h1 {
+  font-family: 'Poppins';
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 1.1;
+  color: #fff;
+}
+
+
+h2 {
+  font-family: 'Poppins';
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 1.1;
+  color: #fff;
+}
+
+
+a {
+  font-weight: 500;
+  color: inherit;
+  text-decoration: inherit;
+}
+a:hover {
+  color: none;
+}
+
+
+
+
+.fix-top {
+  width: 100%;
+  height: 80px;
+}
+
+.subtitle {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  font-family: 'IBM Plex Mono', sans-serif;
+  font-size: 14px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+
+
+.main-page {
+  padding: 20px;
+  margin-inline: auto;
+  max-width: 1440px;
+}
+
+
+.slide__one {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background-color: rgb(8, 8, 8);
+  z-index: 999;
+  transition: all 1s ease-in-out;
+}
+
+.slide__two {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background-color: rgb(8, 8, 8);
+  z-index: 999;
+  transition: all 1s ease-in-out;
+}
+
+.loader {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  user-select: none;
+}
+
+
+
+
+
+
+
+
+
+.btn-contact-me {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 380px;
+  height: 60px;
+  border-radius: 6px;
+  padding: 0;
+  padding-block: 0;
+  padding-inline: 0;
+  margin: 0;
+  border: 0;
+
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+
+  cursor: pointer;
+  background-image: linear-gradient(to right, #74CACB, #a57ce3, #926acd, #74CACB);
+  box-shadow: 0 4px 15px 0 rgba(123, 222, 219, 0.75);
+  background-size: 300% 100%;
+
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.btn-contact-me:hover {
+  background-position: 100% 0;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  transform: scale(1.025);
+}
+
+.btn-contact-me:focus {
+  outline: none;
+}
+
+.btn-contact-me__navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 220px;
+  height: 40px;
+  border-radius: 6px;
+  padding: 0;
+  padding-block: 0;
+  padding-inline: 0;
+  margin: 0;
+  border: 0;
+  margin-right: 20px;
+
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+
+  cursor: pointer;
+  background-image: linear-gradient(to right, #74CACB, #a57ce3, #926acd, #74CACB);
+  box-shadow: 0 4px 15px 0 rgba(123, 222, 219, 0.75);
+  background-size: 300% 100%;
+
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.btn-contact-me__navbar:hover {
+  background-position: 100% 0;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  transform: scale(1.025);
+}
+
+.btn-contact-me__navbar:focus {
+  outline: none;
+}
+
+#hero, #aboutme, #mywork, #contact{
+  scroll-margin-top: 80px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 900px) {
+   
+  .btn-contact-me__navbar {
+      margin-right: 0;
+  }
+
+}
+
+@media (max-width: 600px) {
+   
+  .btn-contact-me__navbar {
+      display: none;
+  }
+
+}
